@@ -136,9 +136,11 @@ after insert on contenido
 for each row
 begin
 	insert into novedades(contenido_id_contenido, album_idalbum)
-    values(new.contenido_id_contenido,null);
+    values(contenido_id_contenido,null);
 end !!
 Delimiter ;
+
+
  
 
 
